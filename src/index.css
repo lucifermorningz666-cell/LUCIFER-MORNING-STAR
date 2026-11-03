@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinema: 'Cinzel', serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+/* Dark mode theme variations */
+body.theme-midnight {
+  background-color: #030407;
+  color: #f1f3f8;
+}
+
+body.theme-obsidian {
+  background-color: #000000;
+  color: #ededed;
+}
+
+body.theme-warm {
+  background-color: #0c0908;
+  color: #f5ece4;
+}
+
+/* Accessibility: High contrast mode */
+body.high-contrast {
+  filter: contrast(125%);
+}
+
+body.high-contrast button,
+body.high-contrast a,
+body.high-contrast input,
+body.high-contrast select {
+  outline: 2px solid #ffffff !important;
+  outline-offset: 2px;
+}
+
+/* Subtitle styling classes */
+.subtitles-preview {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Custom sleek cinema scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 17, 23, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}

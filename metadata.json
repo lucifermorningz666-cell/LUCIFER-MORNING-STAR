@@ -1,0 +1,6 @@
+{
+  "name": "Lumière Cinema & Stream",
+  "description": "Next-generation movie and series streaming platform with personalized recommendations, offline travel downloads, parental controls, accessible high-quality playback, and social watch sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
